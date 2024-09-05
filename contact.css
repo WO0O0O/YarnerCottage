@@ -69,18 +69,19 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .contact-info {
-    margin-top: 10px; /* Reduced top margin */
-    margin-bottom: 10px; /* Reduced bottom margin */
+    margin-top: 15px; /* Slightly increased top margin */
+    margin-bottom: 15px; /* Slightly increased bottom margin */
     text-align: left;
     display: inline-block;
-    margin-top: 20px;
 }
 
 .contact-info p {
-    margin: 3px 0; /* Further reduced spacing between contact info lines */
+    margin: 5px 0; /* Slightly increased spacing between contact info lines */
 }
 
 .contact-info a {
@@ -100,8 +101,8 @@ body {
 }
 
 .contact-message {
-    margin-top: 10px; /* Added top margin */
-    margin-bottom: 10px; /* Reduced bottom margin */
+    margin-top: 15px; /* Slightly increased top margin */
+    margin-bottom: 20px; /* Increased bottom margin */
     font-style: italic;
 }
 
@@ -123,4 +124,52 @@ body {
     background-color: rgba(255, 255, 255, 0.443);
     transform: translateY(-3px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* iPhone-specific styles */
+@media only screen and (max-width: 414px) {
+    .contact-content {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .contact-content h1 {
+        font-size: 1.6em;
+    }
+
+    .owner-profile {
+        flex-direction: column;
+    }
+
+    .owner-info {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .owner-info h2 {
+        font-size: 1.2em;
+    }
+
+    .owner-info p {
+        font-size: 0.9em;
+    }
+
+    .owner-profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    .contact-message {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }
