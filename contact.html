@@ -1,29 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Yarner Cottage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-image: url("images/yarner1.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .contact-content {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        width: 90%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        text-align: center;
+        margin: 20px auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-content h1 {
+        margin-bottom: 10px;
+        font-size: 1.8em;
+        text-align: center;
+      }
+
+      .owner-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .owner-info {
+        text-align: right;
+        margin-right: 20px;
+      }
+
+      .owner-info h2 {
+        font-size: 1.4em;
+        margin-bottom: 0;
+      }
+
+      .owner-info p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .owner-profile img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .contact-info {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+        display: inline-block;
+      }
+
+      .contact-info p {
+        margin: 5px 0;
+      }
+
+      .contact-info a {
+        color: #358bed; /* Changed from #4CAF50 to a professional blue color */
+        text-decoration: none;
+        font-weight: 400;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-info a.call-link {
+        font-size: 0.9em;
+        margin-left: 5px;
+        font-weight: 400;
+      }
+
+      .contact-message {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .contact-message p {
+        margin: 0;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+
+      .cta-button:hover {
+        background-color: rgba(255, 255, 255, 0.443);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      @media only screen and (max-width: 414px) {
+        .contact-content {
+          padding: 20px;
+          width: 95%;
+        }
+
+        .contact-content h1 {
+          font-size: 1.6em;
+        }
+
+        .owner-profile {
+          flex-direction: column;
+        }
+
+        .owner-info {
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        .owner-info h2 {
+          font-size: 1.2em;
+        }
+
+        .owner-info p {
+          font-size: 0.9em;
+        }
+
+        .owner-profile img {
+          width: 70px;
+          height: 70px;
+        }
+
+        .contact-info {
+          font-size: 0.9em;
+        }
+
+        .contact-message {
+          font-size: 0.9em;
+        }
+
+        .cta-button {
+          padding: 10px 20px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <div class="contact-content">
-        <h1>Contact Us</h1>
-        <div class="owner-profile">
-            <div class="owner-info">
-                <h2>Vron and James Wooster</h2>
-                <p>Owners of Yarner Cottage</p>
-            </div>
-            <img src="images/profilepic.webp" alt="Yarner Cottage">
+      <h1>Contact Us</h1>
+      <div class="owner-profile">
+        <div class="owner-info">
+          <h2>Vron and James Wooster</h2>
+          <p>Owners of Yarner Cottage</p>
         </div>
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:veronica@thewoosters.com">veronica@thewoosters.com</a></p>
-            <p><strong>Address:</strong> Yarner Cottage, Netherton, Newton Abbot, Devon, UK</p>
-        </div>
-        <p class="contact-message">We're happy to answer any questions about your stay at Yarner Cottage. Feel free to reach out via email.</p>
-        <a href="index.html" class="cta-button">Back to Home</a>
+        <img src="images/profilepic.webp" alt="Yarner Cottage" />
+      </div>
+      <div class="contact-info">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:veronica@thewoosters.com">cottage@thewoosters.com</a>
+        </p>
+        <p>
+          <strong>Address:</strong> Yarner Cottage, Netherton, Newton Abbot,
+          Devon, UK
+        </p>
+      </div>
+      <div class="contact-message">
+        <p>We're happy to answer any questions about your stay at Yarner Cottage.</p>
+        <p>Feel free to reach out via email.</p>
+      </div>
+      <a href="index.html" class="cta-button">Back to Home</a>
     </div>
-</body>
+  </body>
 </html>
